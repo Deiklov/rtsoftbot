@@ -5,9 +5,6 @@ from xml.etree import ElementTree as ET
 bot = telebot.TeleBot('983591267:AAHaXYC_hwsHD0V_2imXNwah9FQ7Rga8qMk')
 
 
-# login = ''
-
-
 @bot.message_handler(commands=['start'])
 def start_message(message):
     bot.send_message(message.chat.id, 'Привет, ты написал мне /start')
